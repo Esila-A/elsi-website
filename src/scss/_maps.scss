@@ -1,0 +1,13 @@
+@use "sass:map";
+
+$colors: (
+        header: #9a9a9a,
+        main: rgba(31, 31, 31, 0.96),
+        footer: rgba(31, 31, 31, 0.96),
+        shadow: #000000,
+        form: rgba(154, 154, 154, 0.7),
+        form-shadow: #9a9a9a,
+        font-color: #1F1F1F,
+        main-font-color: #bebebe,
+        button: rgba(0, 0, 0, 0)
+);

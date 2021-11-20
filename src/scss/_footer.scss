@@ -1,0 +1,19 @@
+@use "sass:map";
+
+.footer {
+  box-sizing: border-box;
+  padding: 0 30px;
+  background-color: map.get($colors, footer);
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+
+  &-list {
+    display: flex;
+
+    .link {
+      @include linkProps ();
+      margin-left: 20px;
+    }
+  }
+}

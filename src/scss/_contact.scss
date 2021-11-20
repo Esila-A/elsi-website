@@ -1,0 +1,8 @@
+@use "sass:map";
+
+button {
+  background-color: map.get($colors, button);
+  border: none;
+  color: map.get($colors, main-font-color);
+  @include font ();
+}

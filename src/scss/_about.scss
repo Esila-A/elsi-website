@@ -1,0 +1,12 @@
+@use "sass:map";
+@import "mixins";
+
+.about {
+  @include main ();
+  box-sizing: border-box;
+  padding: 30px;
+
+  .text {
+    color: map.get($colors, main-font-color);
+  }
+}

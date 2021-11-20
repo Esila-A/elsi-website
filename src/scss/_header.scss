@@ -1,0 +1,23 @@
+@use "sass:map";
+@import "mixins";
+
+.navigation {
+    padding: 0;
+    margin: 0;
+    background-color: map.get($colors, header);
+    height: 5vh;
+    box-shadow: 0 10px 10px map.get($colors, shadow);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &-list {
+      list-style: none;
+    }
+
+  .link {
+    @include linkProps();
+    text-transform: uppercase;
+  }
+}

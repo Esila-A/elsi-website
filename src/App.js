@@ -1,46 +1,32 @@
 import * as React from "react";
-import { Routes, Route, Link } from "react-router-dom";
 import "./scss/main.scss";
+import {Route, Routes} from "react-router-dom";
+import Header from "./components/header";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Gallery from "./pages/gallery";
+import Collaborations from "./pages/collaborations";
+import Interviews from "./pages/interviews";
+import Sintar from "./pages/sintar";
+import Suchary from "./pages/suchary";
+import Footer from "./components/footer"
 
 function App() {
   return (
-      <div className="App">
-        <h1>Welcome to React Router!</h1>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-        </Routes>
-      </div>
-  );
-}
-
-function Home() {
-  return (
       <>
-        <main>
-          <h2>Welcome to the homepage!</h2>
-          <p>You can do this, I believe in you.</p>
-        </main>
-        <nav>
-          <Link to="/about">About</Link>
-        </nav>
-      </>
-  );
-}
-
-function About() {
-  return (
-      <>
-        <main>
-          <h2>Who are we?</h2>
-          <p>
-            That feels like an existential question, don't you
-            think?
-          </p>
-        </main>
-        <nav>
-          <Link to="/">Home</Link>
-        </nav>
+          <Header />
+          <main>
+              <Routes>
+                  <Route path="/home" element={<Home />} />
+                  <Route path="about" element={<About />} />
+                  <Route path="gallery" element={<Gallery />} />
+                  <Route path="collaborations" element={<Collaborations />} />
+                  <Route path="interviews" element={<Interviews />} />
+                  <Route path="sintar" element={<Sintar />} />
+                  <Route path="suchary" element={<Suchary />} />
+              </Routes>
+          </main>
+          <Footer />
       </>
   );
 }

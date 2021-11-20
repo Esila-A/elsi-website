@@ -1,0 +1,19 @@
+@use "sass:map";
+
+@mixin font () {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+@mixin linkProps () {
+  text-decoration: none;
+  font-size: 1rem;
+  color: map.get($colors, font-color);
+  @include font ()
+}
+
+@mixin main () {
+  background-color: map.get($colors, main);
+  height: 90vh;
+}

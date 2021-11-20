@@ -1,0 +1,14 @@
+@use "sass:map";
+@import "mixins";
+
+.collaborations {
+  @include main ();
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+  .text {
+    color: map.get($colors, main-font-color);
+  }
+}
