@@ -2,13 +2,22 @@
 @import "mixins";
 
 .collaborations {
-  @include main ();
-  box-sizing: border-box;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
+  @include main;
+
+  &_header {
+    @include headline;
+  }
+
+  .lists {
+    display: flex;
+    justify-content: space-evenly;
+  }
 
   .text {
+    @include linkProps;
     color: map.get($colors, main-font-color);
+    font-weight: normal;
+    vertical-align: center;
+    line-height: 2rem;
   }
 }

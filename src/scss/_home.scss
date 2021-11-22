@@ -4,10 +4,39 @@
 .home {
   @include main ();
   box-sizing: border-box;
-  padding: 30px;
+  padding: 30px 100px 30px 100px;
   display: flex;
+  justify-content: space-between;
+
+  .photo {
+    position: relative;
+    top: 30px;
+    padding-left: 7rem;
+  }
 
   &_text {
     color: map.get($colors, main-font-color);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    line-height: 100px;
+    align-self: center;
+    text-shadow: 5px 5px 10px map.get($colors, shadow);
+  }
+
+  &_header {
+    font-weight: bold;
+
+    &-one {
+      font-size: 6rem;
+    }
+
+    &-two {
+      font-size: 4rem;
+    }
+  }
+
+  &_paragraph {
+    font-size: 2.5rem;
+    line-height: 50px;
   }
 }

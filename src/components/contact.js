@@ -17,7 +17,7 @@ const Contact = () => {
         return (
             <>
                 <Form />
-                <button onClick={onClick}>Contact me!</button>
+                <button className="contact-btn" onClick={onClick}>Contact me!</button>
             </>
         )
     }
@@ -25,7 +25,7 @@ const Contact = () => {
     const ContactOff = ({onClick}) => {
         return (
             <>
-                <button onClick={onClick}>Contact me!</button>
+                <button className="contact-btn" onClick={onClick}>Contact me!</button>
             </>
         )
     }

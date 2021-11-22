@@ -1,14 +1,41 @@
 @use "sass:map";
 @import "mixins";
 
+* {
+  box-sizing: border-box;
+}
+
 .sintar {
   @include main ();
-  box-sizing: border-box;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
+
+  &_header {
+    @include headline;
+  }
+
+  &_div {
+    margin: 0 7rem;
+    padding: 1rem 3rem;
+    box-shadow: 0 0 20px -10px map.get($colors, shadow) inset;
+    border-radius: 10px;
+  }
+
+  &_text {
+    @include font;
+    font-weight: normal;
+    line-height: 2rem;
+    height: 29rem;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 
   .text {
     color: map.get($colors, main-font-color);
+  }
+
+  span {
+    font-weight: bold;
   }
 }

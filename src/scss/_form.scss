@@ -1,0 +1,49 @@
+@use "sass:map";
+@import "mixins";
+
+.form-background {
+  background-color: map.get($colors, form);
+  height: 40rem;
+  width: 65rem;
+  z-index: 1000;
+  @include position;
+  border-radius: 10px;
+  box-shadow: 0 0 20px map.get($colors,form-shadow);
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    @include position;
+
+    &_input, textarea  {
+      border-radius: 20px;
+      border: 3px solid rgba(189, 189, 189, 0.86);
+      padding: 10px 20px;
+      width: 45rem;
+      margin-top: 30px;
+      background-color: map.get($colors, form);
+      @include font;
+      color: map.get($colors, font-color);
+      font-weight: normal;
+      box-shadow: 0 0 10px map.get($colors, form-shadow);
+      resize: none
+    }
+
+    textarea {
+      padding: 20px 20px;
+    }
+
+    .submit {
+      @extend .contact-btn;
+      font-size: 2rem;
+      margin-top: 20px;
+      padding: 0;
+      text-shadow: 0 5px 10px map.get($colors, shadow);
+    }
+  }
+
+
+}

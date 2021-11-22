@@ -3,10 +3,18 @@
 
 .about {
   @include main ();
-  box-sizing: border-box;
-  padding: 30px;
+
+  &_content {
+    margin: 0 7rem;
+  }
+
+  &_header {
+    @include headline;
+  }
 
   .text {
-    color: map.get($colors, main-font-color);
+    @include font;
+    font-weight: normal;
+    line-height: 2rem;
   }
 }

@@ -1,8 +1,14 @@
 @use "sass:map";
+@import "mixins";
 
-button {
-  background-color: map.get($colors, button);
+.contact-btn {
+  background-color: transparent;
   border: none;
-  color: map.get($colors, main-font-color);
-  @include font ();
+  @include font;
+  font-size: 1.5rem;
+  text-shadow: 5px 5px 10px map.get($colors, shadow);
+
+  &:hover {
+    color: white;
+  };
 }

@@ -3,12 +3,17 @@
 
 .interviews {
   @include main ();
-  box-sizing: border-box;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+
+  &_header {
+    @include headline;
+  }
 
   .text {
+    @include linkProps;
     color: map.get($colors, main-font-color);
+    font-weight: normal;
+    vertical-align: center;
+    line-height: 2rem;
   }
 }

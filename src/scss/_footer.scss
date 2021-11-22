@@ -1,19 +1,32 @@
 @use "sass:map";
 
 .footer {
+  position: relative;
+  z-index: 1;
+
   box-sizing: border-box;
-  padding: 0 30px;
+  padding: 0 40px;
   background-color: map.get($colors, footer);
   height: 5vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -10px 40px map.get($colors, shadow);
 
   &-list {
     display: flex;
 
     .link {
-      @include linkProps ();
-      margin-left: 20px;
+      padding-left: 24px;
+
+      &:hover {
+        padding-left: 28px;
+      }
+    }
+
+    .icon {
+      margin-right: 40px;
+      margin-left: 5px;
     }
   }
 }

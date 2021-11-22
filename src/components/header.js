@@ -21,9 +21,6 @@ const Header = () => {
                     <li className="navigation-list">
                         <NavLink to="/sintar" className="link">Sintar</NavLink>
                     </li>
-                    <li className="navigation-list">
-                        <NavLink to="/suchary" className="link">Suchary</NavLink>
-                    </li>
         </ul>
     )
 }

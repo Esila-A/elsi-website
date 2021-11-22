@@ -18,6 +18,7 @@
 
   .link {
     @include linkProps();
-    text-transform: uppercase;
+    color: #dedede;
+    text-shadow: 0 0 10px map.get($colors, shadow);
   }
 }
