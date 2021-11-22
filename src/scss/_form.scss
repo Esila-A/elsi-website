@@ -29,7 +29,11 @@
       color: map.get($colors, font-color);
       font-weight: normal;
       box-shadow: 0 0 10px map.get($colors, form-shadow);
-      resize: none
+      resize: none;
+
+      &:focus {
+        border-color: rgba(255, 255, 255, 0.87);
+      }
     }
 
     textarea {
@@ -44,6 +48,4 @@
       text-shadow: 0 5px 10px map.get($colors, shadow);
     }
   }
-
-
 }

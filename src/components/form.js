@@ -74,8 +74,8 @@ const Form = () => {
     return (
         <div className="form-background">
             <form className="form" onSubmit={handleSubmit}>
-                <input type="text" name="name" placeholder="your name" value={form.name} onChange={handleChange} className="form_input input-one" />
-                <input type="email" name="email" placeholder="your email" value={form.email} onChange={handleChange} className="form_input input-two" />
+                <input type="text" name="name" placeholder="your name" value={form.name} onChange={handleChange} className="form_input input-one" autoComplete="off" />
+                <input type="email" name="email" placeholder="your email" value={form.email} onChange={handleChange} className="form_input input-two" autoComplete="off" />
                 <textarea name="message" cols="30" rows="15" placeholder="your message" value={form.message} onChange={handleChange} className="form_textarea" />
                 <button type="submit" className="submit">Submit</button>
             </form>
