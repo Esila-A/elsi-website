@@ -1,15 +1,6 @@
 @use "sass:map";
 @import "mixins";
 
-.form-background {
-  background-color: map.get($colors, form);
-  height: 40rem;
-  width: 65rem;
-  z-index: 1000;
-  @include position;
-  border-radius: 10px;
-  box-shadow: 0 0 20px map.get($colors,form-shadow);
-
   .form {
     display: flex;
     flex-direction: column;
@@ -46,6 +37,15 @@
       margin-top: 20px;
       padding: 0;
       text-shadow: 0 5px 10px map.get($colors, shadow);
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
+
+.notification {
+  z-index: 2;
+  @include position;
+  color: green;
 }

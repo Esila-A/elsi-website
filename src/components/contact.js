@@ -16,8 +16,10 @@ const Contact = () => {
     const ContactOn = ({onClick}) => {
         return (
             <>
+                <div className="form-background">
+                    <button className="close-btn" onClick={onClick}>X</button>
+                </div>
                 <Form />
-                <button className="contact-btn" onClick={onClick}>Contact me!</button>
             </>
         )
     }
