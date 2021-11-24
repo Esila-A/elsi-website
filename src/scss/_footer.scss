@@ -5,15 +5,16 @@
   z-index: 1;
 
   box-sizing: border-box;
-  padding: 0 40px;
-  background-color: map.get($colors, footer);
+  background-color: map.get($try, footer);
   height: 5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 -10px 40px map.get($colors, shadow);
+  box-shadow: 30px -10px 40px map.get($colors, shadow),
+              -1665px -10px 40px map.get($colors, shadow);
 
   &-list {
+    margin: 0 40px;
     display: flex;
     align-items: center;
 

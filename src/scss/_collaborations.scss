@@ -15,7 +15,7 @@
 
   .text {
     @include linkProps;
-    color: map.get($colors, main-font-color);
+    color: map.get($try, font-color);
     font-weight: normal;
     vertical-align: center;
     line-height: 2rem;

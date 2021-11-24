@@ -4,21 +4,23 @@
   font-family: 'Bebas Neue', cursive;
   font-weight: bold;
   letter-spacing: 2px;
-  color: map.get($colors, main-font-color);
+  color: map.get($try, font-color);
 }
 
 @mixin linkProps () {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   @include font;
 
   &:hover {
     color: white;
+    text-shadow: 0 0 8px map.get($try, shadow);
+    cursor: pointer;
   }
 }
 
 @mixin main () {
-  background-color: map.get($colors, main);
+  background-color: map.get($try, background);
   height: 90vh;
 }
 
@@ -30,10 +32,18 @@
 }
 
 @mixin headline {
+  font-family: 'Bebas Neue', cursive;
   font-size: 3.5rem;
   font-weight: bold;
-  padding: 55px 0 65px 0;
-  color: map.get($colors, main-font-color);
-  text-shadow: 5px 5px 10px map.get($colors, shadow);
+  padding: 65px 0 55px 0;
+  color: map.get($try, font-color);
+  text-shadow: 5px 5px 10px map.get($try, font-color-shadow);
   text-align: center;
+  text-decoration: underline 5px map.get($colors, accent);
+  text-underline-offset: 5px;
 }
+
+//@mixin maybe {
+//  #9A8C98;
+//  #C9ADA7
+//}

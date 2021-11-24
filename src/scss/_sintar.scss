@@ -10,6 +10,7 @@
 
   &_header {
     @include headline;
+
   }
 
   &_div {
@@ -20,11 +21,12 @@
   }
 
   &_text {
-    @include font;
-    font-weight: normal;
+    color: map.get($try, font-color);
+    font-size: 1.1rem;
     line-height: 2rem;
     height: 29rem;
     overflow-y: scroll;
+    text-shadow: 0 0 1px map.get($try, font-color-shadow);
 
     &::-webkit-scrollbar {
       display: none;

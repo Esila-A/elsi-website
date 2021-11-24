@@ -2,11 +2,14 @@
 @import "mixins";
 
 .navigation {
-    padding: 0;
+  position: relative;
+  z-index: 1;
+
+    padding-top: 8px;
     margin: 0;
-    background-color: map.get($colors, header);
+    background-color: map.get($try, header);
     height: 5vh;
-    box-shadow: 0 10px 10px map.get($colors, shadow);
+    //box-shadow: 0 10px 10px map.get($try, shadow);
 
     display: flex;
     justify-content: space-evenly;
@@ -18,7 +21,7 @@
 
   .link {
     @include linkProps();
-    color: #dedede;
-    text-shadow: 0 0 10px map.get($colors, shadow);
+    color: #464646;
+    text-shadow: 0 1px 1px map.get($try, shadow);
   }
 }

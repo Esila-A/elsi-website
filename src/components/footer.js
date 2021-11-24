@@ -1,7 +1,7 @@
-import insta from "../photos/instagram_icon.svg";
-import tiktok from "../photos/tiktok_icon.svg";
-import youtube from "../photos/youtube_icon.svg";
-import facebook from "../photos/facebook_icon.svg";
+import insta from "../photos/instagram.svg";
+import tiktok from "../photos/tik-tok.png";
+import youtube from "../photos/youtube.svg";
+import facebook from "../photos/facebook.svg";
 
 import Contact from "./contact";
 const Footer = () => {

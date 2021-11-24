@@ -15,12 +15,12 @@
   }
 
   &_text {
-    color: map.get($colors, main-font-color);
+    color: map.get($try, font-color);
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 2px;
     line-height: 100px;
     align-self: center;
-    text-shadow: 5px 5px 10px map.get($colors, shadow);
+    text-shadow: 0 1px 1px map.get($colors, font-shadow);
   }
 
   &_header {
@@ -28,6 +28,10 @@
 
     &-one {
       font-size: 6rem;
+      color: darkred;
+      text-decoration: underline 5px darkred;
+      text-underline-offset: 5px;
+      text-shadow: none;
     }
 
     &-two {
