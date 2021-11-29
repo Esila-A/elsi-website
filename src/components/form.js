@@ -18,6 +18,10 @@ const Form = () => {
         });
     };
 
+    const [notice, setNotice] = useState(
+        <button type="submit" className="submit">Submit</button>
+    )
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -28,19 +32,23 @@ const Form = () => {
             "user_tS3Y6YUhlJO7WBrDMRBN8"
         )
             .then(() => {
-                console.log("SENT!");
+                setNotice (
+                    <p className="positive">SENT!</p>
+                );
             })
             .catch(() => {
-                console.log("SOMETHING WENT WRONG...TRY AGAIN");
+                setNotice (
+                    <p className="negative">SOMETHING WENT WRONG... TRY AGAIN</p>
+                )
             });
     };
 
     return (
             <form className="form" onSubmit={handleSubmit}>
-                <input type="text" name="name" placeholder="your name" value={form.name} onChange={handleChange} className="form_input input-one" autoComplete="off" />
-                <input type="email" name="email" placeholder="your email" value={form.email} onChange={handleChange} className="form_input input-two" autoComplete="off" />
-                <textarea name="message" cols="30" rows="15" placeholder="your message" value={form.message} onChange={handleChange} className="form_textarea" />
-                <button type="submit" className="submit">Submit</button>
+                <input type="text" name="name" placeholder="your name" value={form.name} onChange={handleChange} className="form_input input-one for" autoComplete="off" required={true}/>
+                <input type="email" name="email" placeholder="your email" value={form.email} onChange={handleChange} className="form_input input-two for" autoComplete="off" required={true}/>
+                <textarea name="message" rows="15" placeholder="your message" value={form.message} onChange={handleChange} className="form_textarea for" required={true}/>
+                {notice}
             </form>
     )
 }

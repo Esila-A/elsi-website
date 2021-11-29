@@ -19,7 +19,7 @@
   }
 }
 
-@mixin main () {
+@mixin background () {
   background-color: map.get($try, background);
   height: 90vh;
 }
@@ -43,7 +43,12 @@
   text-underline-offset: 5px;
 }
 
-//@mixin maybe {
-//  #9A8C98;
-//  #C9ADA7
-//}
+@mixin notice {
+  margin: 20px 50px 0 50px;
+  padding: 5px 0 5px 0;
+  background-color: transparent;
+  border: none;
+  @include font;
+  font-size: 2rem;
+}
+

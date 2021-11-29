@@ -6,11 +6,11 @@
 }
 
 .sintar {
-  @include main ();
+  @include background ();
+  padding: 0 8rem;
 
   &_header {
     @include headline;
-
   }
 
   &_div {
@@ -24,7 +24,8 @@
     color: map.get($try, font-color);
     font-size: 1.1rem;
     line-height: 2rem;
-    height: 29rem;
+    text-align: justify;
+    text-justify: inter-word;
     overflow-y: scroll;
     text-shadow: 0 0 1px map.get($try, font-color-shadow);
 
@@ -39,5 +40,39 @@
 
   span {
     font-weight: bold;
+  }
+}
+
+.sintarComputer {
+  .sintar_text {
+    height: 29rem;
+  }
+}
+
+.sintarMobile {
+  display: none;
+}
+
+
+@media (max-width: 792px) {
+  .sintarComputer {
+    display: none;
+  }
+
+  .sintarMobile {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    overflow-y: scroll;
+    background-color: map.get($try, background);
+
+    .sintar {
+      padding: 0 4rem;
+
+      &_text {
+        overflow-y: revert;
+        padding-bottom: 3rem;
+      }
+    }
   }
 }

@@ -1,31 +1,66 @@
-import { storage } from "../firebase";
+import { NavLink } from "react-router-dom";
+import { getDownloadURL, getStorage, list, ref } from "firebase/storage";
+import {useEffect, useState} from "react";
 
-// Get all the images from Storage
-const [files, setFiles] = useState();
+async function getGallery() {
+    const storage = getStorage()
+    const listRef = ref(storage)
 
-useEffect(() => {
-    const fetchImages = async () => {
-        let result = await storage.ref().child("gs://bro-s-website.appspot.com").listAll();
-        let urlPromises = result.items.map((imageRef) =>
-            imageRef.getDownloadURL()
-        );
+    const files = await list(listRef)
+    const f = await Promise.all(files.prefixes.map(value => list(value)))
 
-        return Promise.all(urlPromises);
-    };
+    const finalData = await Promise.all(
+        f.map(async (folder, i) => ({
+            name: files.prefixes[i]._location.path_,
+            image: await getDownloadURL(folder.items[0]),
+        }))
+    )
 
-    const loadImages = async () => {
-        const urls = await fetchImages();
-        setFiles(urls);
-    };
-    loadImages();
-}, []);
-
+    return finalData
+}
 
 const Gallery = () => {
-    return (
-        <div className="gallery">
 
-        </div>
+    let [gallery, setGallery] = useState();
+    let [error, setError] = useState();
+
+    useEffect(async () => {
+        try {
+            const pix = await getGallery()
+            setGallery(pix)
+        } catch(e) {
+            setError(e)
+        }
+    }, [])
+
+    if (error)
+        return <>
+            <div className="page">
+                <p className="infoMessage">BŁĄD</p>
+            </div>
+        </>
+
+    if (!gallery && !error)
+        return <>
+            <div className="page">
+                <p className="infoMessage">ŁADOWANIE</p>
+            </div>
+        </>
+
+    return (
+        <section className="gallery">
+
+            {gallery.map (({name, image}) =>
+                <div>
+                    <NavLink to={"/gallery/"+name} className="link">
+                        <div className="content">
+                            <img src={image} alt="" className="image"/>
+                            <h3>{name}</h3>
+                        </div>
+                    </NavLink>
+                </div>
+            )}
+        </section>
     )
 }
 

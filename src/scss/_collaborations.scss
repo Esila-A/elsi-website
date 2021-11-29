@@ -2,7 +2,7 @@
 @import "mixins";
 
 .collaborations {
-  @include main;
+  @include background;
 
   &_header {
     @include headline;
@@ -19,5 +19,36 @@
     font-weight: normal;
     vertical-align: center;
     line-height: 2rem;
+  }
+}
+
+@media (max-width: 792px) {
+  .collaborations {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    overflow-y: scroll;
+
+    .all-text {
+      margin: 0;
+      padding: 0 4rem 3rem 4rem;
+      text-align: center;
+
+      .lists {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          padding-bottom: 20px;
+
+          .text {
+            line-height: 1.5rem;
+          }
+        }
+      }
+    }
   }
 }

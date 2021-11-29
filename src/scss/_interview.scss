@@ -2,7 +2,7 @@
 @import "mixins";
 
 .interviews {
-  @include main ();
+  @include background ();
   text-align: center;
 
   &_header {
@@ -15,5 +15,28 @@
     font-weight: normal;
     vertical-align: center;
     line-height: 2rem;
+  }
+}
+
+@media (max-width: 792px) {
+  .interviews {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0 4rem 3rem 4rem;
+    text-align: center;
+
+    li {
+      padding-bottom: 20px;
+
+      .text {
+        line-height: 1.5rem;
+      }
+    }
+
   }
 }

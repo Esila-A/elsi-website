@@ -1,8 +1,7 @@
 @use "sass:map";
 @import "mixins";
 
-.gallery {
-
+.page {
   @include background ();
   display: flex;
   flex-wrap: wrap;
@@ -10,35 +9,23 @@
   align-items: center;
   padding: 1rem 10rem;
 
+  .infoMessage {
+    @include linkProps
+  }
+
   .image {
     width: 20rem;
     margin: 0.5rem 3rem;
     border: 3px solid map.get($try, font-color-shadow);
-
-    &:hover {
-      box-shadow: 0 0 10px map.get($try, font-color-shadow);
-    }
-  }
-
-  .link {
-    @include linkProps();
-    color: #464646;
-    text-shadow: 0 1px 1px map.get($try, shadow);
-
-
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
   }
 }
 
 @media (max-width: 792px) {
-  .gallery {
+  .page {
     width: 100vw;
     height: 85vh;
     overflow-y: scroll;
     padding: 2rem 0;
   }
 }
+

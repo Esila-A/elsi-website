@@ -2,7 +2,7 @@
 @import "mixins";
 
 .about {
-  @include main ();
+  @include background ();
 
   &_content {
     margin: 0 7rem;
@@ -16,5 +16,22 @@
     @include font;
     font-weight: normal;
     line-height: 2rem;
+  }
+}
+
+@media (max-width: 792px) {
+  .about {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    overflow-y: scroll;
+
+    &_content {
+      margin: 0;
+      padding: 0 4rem 3rem 4rem;
+    }
   }
 }

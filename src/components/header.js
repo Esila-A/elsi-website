@@ -1,27 +1,12 @@
-import { NavLink } from "react-router-dom";
+import MobileNavigation from "./mobileNavigation";
+import ComputerNavigation from "./computerNavigation";
 
 const Header = () => {
     return (
-        <ul className="navigation">
-                    <li className="navigation-list">
-                        <NavLink to="/home" className="link">Home</NavLink>
-                    </li>
-                    <li className="navigation-list">
-                        <NavLink to="/about" className="link">About</NavLink>
-                    </li>
-                    <li className="navigation-list">
-                        <NavLink to="/gallery" className="link">Gallery</NavLink>
-                    </li>
-                    <li className="navigation-list">
-                        <NavLink to="/collaborations" className="link">Collaborations</NavLink>
-                    </li>
-                    <li className="navigation-list">
-                        <NavLink to="/interviews" className="link">Interviews</NavLink>
-                    </li>
-                    <li className="navigation-list">
-                        <NavLink to="/sintar" className="link">Sintar</NavLink>
-                    </li>
-        </ul>
+        <>
+            <MobileNavigation />
+            <ComputerNavigation />
+        </>
     )
 }
 

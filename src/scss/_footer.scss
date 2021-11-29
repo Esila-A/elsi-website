@@ -38,3 +38,20 @@
      }
   }
 }
+
+@media (max-width: 792px) {
+  .footer {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    position: sticky;
+
+    .contact-btn {
+      margin-bottom: 0.12rem;
+      padding: 0;
+    }
+  }
+}
