@@ -2,8 +2,7 @@
 @import "mixins";
 
 .gallery {
-
-  @include background ();
+  @include background;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -36,9 +35,17 @@
 
 @media (max-width: 792px) {
   .gallery {
-    width: 100vw;
-    height: 85vh;
     overflow-y: scroll;
-    padding: 2rem 0;
+    padding: 4rem 0;
+
+    .image {
+      width: 18rem;
+    }
+  }
+
+  .link {
+    .content {
+      margin-bottom: 3rem;
+    }
   }
 }

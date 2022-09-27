@@ -1,16 +1,16 @@
 @use "sass:map";
 
-@mixin font () {
+@mixin font {
   font-family: 'Bebas Neue', cursive;
   font-weight: bold;
   letter-spacing: 2px;
   color: map.get($try, font-color);
 }
 
-@mixin linkProps () {
+@mixin linkProps {
   text-decoration: none;
-  font-size: 1.5rem;
   @include font;
+  font-size: 1.5rem;
 
   &:hover {
     color: white;
@@ -19,9 +19,13 @@
   }
 }
 
-@mixin background () {
-  background-color: map.get($try, background);
+@mixin background {
+  background-color: map.get($try, background-color);
   height: 90vh;
+
+  @media (max-width: 792px) {
+    height: 100%;
+  }
 }
 
 @mixin position {
@@ -41,6 +45,11 @@
   text-align: center;
   text-decoration: underline 5px map.get($colors, accent);
   text-underline-offset: 5px;
+  line-height: 3.5rem;
+
+  @media (max-width: 792px) {
+    font-size: 3rem;
+  }
 }
 
 @mixin notice {

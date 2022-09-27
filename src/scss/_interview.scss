@@ -2,11 +2,15 @@
 @import "mixins";
 
 .interviews {
-  @include background ();
+  @include background;
   text-align: center;
 
   &_header {
     @include headline;
+  }
+
+  ul {
+    padding-top: 10vh
   }
 
   .text {
@@ -20,23 +24,24 @@
 
 @media (max-width: 792px) {
   .interviews {
-    width: 100vw;
-    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
-    margin: 0;
-    padding: 0 4rem 3rem 4rem;
+    padding: 0 2rem 3rem 2rem;
     text-align: center;
 
-    li {
-      padding-bottom: 20px;
+    ul {
+      padding-top: 0;
 
-      .text {
-        line-height: 1.5rem;
+      li {
+        padding-bottom: 25px;
+
+        .text {
+          line-height: 1.5rem;
+          font-size: 5vw;
+        }
       }
     }
-
   }
 }

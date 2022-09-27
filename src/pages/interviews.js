@@ -13,8 +13,6 @@ const Interviews = () => {
                 <li><a href="https://audycje.tokfm.pl/podcast/49355,Los-Polandos-Elsi-Adajew-i-czeczenski-punkt-widzenia" target="_blank" rel="noreferrer" className="text">Los Polandos - Elsi Adajew i czeczeński punkt widzenia</a></li>
                 <li><a href="https://www.youtube.com/watch?v=uj0iRk0_Hgw" target="_blank" rel="noreferrer" className="text">Muzułmanin i Czeczen, który kocha Warszawę i Polskę - Elsi Adajew</a></li>
                 <li><a href="https://www.youtube.com/watch?v=TgE1yYHwCDQ" target="_blank" rel="noreferrer" className="text">Wywiad z Elsim</a></li>
-                <li><a href="https://www.youtube.com" target="_blank" rel="noreferrer" className="text">...</a></li>
-                <li><a href="https://www.youtube.com" target="_blank" rel="noreferrer" className="text">...</a></li>
             </ul>
         </div>
     )

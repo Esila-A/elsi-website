@@ -18,9 +18,9 @@ const Navigation = (props) => {
             <li className="navigation-list" onClick={() => props.isMobilePhone && props.closeMenu()}>
                 <NavLink to="/interviews" className="link">Interviews</NavLink>
             </li>
-            <li className="navigation-list" onClick={() => props.isMobilePhone && props.closeMenu()}>
+            {/* <li className="navigation-list" onClick={() => props.isMobilePhone && props.closeMenu()}>
                 <NavLink to="/sintar" className="link">Sintar</NavLink>
-            </li>
+            </li> */}
         </ul>
     )
 }
