@@ -12,8 +12,8 @@
   .image {
     width: 20rem;
     margin: 0.5rem 3rem;
-    border: 3px solid map.get($try, font-color-shadow);
-
+    box-shadow: 0 0 10px 1px gray;
+    
     &:hover {
       box-shadow: 0 0 10px map.get($try, font-color-shadow);
     }

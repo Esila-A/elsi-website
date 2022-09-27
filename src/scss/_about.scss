@@ -17,6 +17,11 @@
     @include font;
     font-weight: normal;
     line-height: 2rem;
+
+    &_instaLink {
+      text-decoration: none;
+      color: rgb(100, 100, 100);
+    }
   }
 }
 
