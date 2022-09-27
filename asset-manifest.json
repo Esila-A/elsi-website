@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/elsi-website/static/css/main.7d07f4d3.chunk.css",
-    "main.js": "/elsi-website/static/js/main.02208958.chunk.js",
-    "main.js.map": "/elsi-website/static/js/main.02208958.chunk.js.map",
+    "main.css": "/elsi-website/static/css/main.aad4dcd6.chunk.css",
+    "main.js": "/elsi-website/static/js/main.49a39092.chunk.js",
+    "main.js.map": "/elsi-website/static/js/main.49a39092.chunk.js.map",
     "runtime-main.js": "/elsi-website/static/js/runtime-main.37c48e01.js",
     "runtime-main.js.map": "/elsi-website/static/js/runtime-main.37c48e01.js.map",
     "static/js/2.2348d0f6.chunk.js": "/elsi-website/static/js/2.2348d0f6.chunk.js",
     "static/js/2.2348d0f6.chunk.js.map": "/elsi-website/static/js/2.2348d0f6.chunk.js.map",
     "index.html": "/elsi-website/index.html",
-    "static/css/main.7d07f4d3.chunk.css.map": "/elsi-website/static/css/main.7d07f4d3.chunk.css.map",
+    "static/css/main.aad4dcd6.chunk.css.map": "/elsi-website/static/css/main.aad4dcd6.chunk.css.map",
     "static/js/2.2348d0f6.chunk.js.LICENSE.txt": "/elsi-website/static/js/2.2348d0f6.chunk.js.LICENSE.txt",
     "static/media/elsi.36fa6228.png": "/elsi-website/static/media/elsi.36fa6228.png",
     "static/media/facebook.54b6ed17.svg": "/elsi-website/static/media/facebook.54b6ed17.svg",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.37c48e01.js",
     "static/js/2.2348d0f6.chunk.js",
-    "static/css/main.7d07f4d3.chunk.css",
-    "static/js/main.02208958.chunk.js"
+    "static/css/main.aad4dcd6.chunk.css",
+    "static/js/main.49a39092.chunk.js"
   ]
 }
