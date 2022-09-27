@@ -6,13 +6,6 @@
   "storage": {
     "rules": "storage.rules"
   },
-  "hosting": {
-    "public": "Elsi Adajew",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
     "rewrites": [
       {
         "source": "**",
@@ -20,4 +13,3 @@
       }
     ]
   }
-}

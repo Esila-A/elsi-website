@@ -2,7 +2,7 @@
 @import "mixins";
 
 .home {
-  @include background ();
+  @include background;
   box-sizing: border-box;
   padding: 30px 100px;
   display: flex;
@@ -47,8 +47,6 @@
 
 @media (max-width: 792px) {
   .home {
-    width: 100vw;
-    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,9 +60,23 @@
     }
 
     &_text {
-      padding: 0 4rem 3rem 4rem;
-      font-size: 50vw;
+      padding: 0 3rem 3rem 3rem;
       text-align: center;
+    }
+
+    &_header {
+      &-one {
+        font-size: 5rem;
+      }
+
+      &-two {
+        font-size: 3.5rem;
+      }
+    }
+
+    &_paragraph {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
     }
   }
 }
