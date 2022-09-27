@@ -1,5 +1,5 @@
-# ODDAM RZECZY - helping those in need
-Website created for a JavaScript Developer bootcamp using JavaScript and React
+# ELSI ADAJEW PHOTO - amateur photographer
+Final project for my JavaScript Developer bootcamp using JavaScript and React
 
 ## Table of Contents
 * [about](#about)
