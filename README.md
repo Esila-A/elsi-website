@@ -23,5 +23,5 @@ React Router (6.0.2)<br/>
 Firebase Storage (9.4.1)<br/>
 
 ### The project status
-Done with its development. Website available on [https://esila-a.github.io/elsi-website/]https://esila-a.github.io/elsi-website/)
+Done with its development. Website available on [https://esila-a.github.io/elsi-website/](https://esila-a.github.io/elsi-website/)
 
