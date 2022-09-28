@@ -9,7 +9,7 @@ Final project for my JavaScript Developer bootcamp using JavaScript and React
 
 ### About 
 This is the final project for my JavaScript Developer bootcamp. As a project, we could create anything, e.g. a game, application, website. I chose the last one. I decided to make a website for my brother who deals with photography. It's not an official website, it's just for the sake of the bootcamp. Unfortunately, by the time I handed over my work, my brother did not have time to send me his photos, so I used the stock ones.<br/><br/>
-When creating this website, I had to adhere to the following requirements: use React or a similar library (eg Vue); style in Sass, Material UI or similar technologies; use fetch, axios or Firebase; include the form.<br/><br/>
+When creating this website, I had to adhere to the following requirements: use React or a similar library (e.g. Vue); style in Sass, Material UI or similar technologies; use fetch, axios or Firebase; include the form, make both desktop and mobile versions.<br/><br/>
 This was my first time designing a website and I found it very entertaining, but at the same time, since it was my first time, I realize that the result is not the best :) <br/><br/>
 The hardest parts of this project were working with React Router and Firebase Storage as I never used any of them before. Firebase was used to create the gallery which took me the most time and efforts.
 
