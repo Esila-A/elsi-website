@@ -10,7 +10,6 @@
 @mixin linkProps {
   text-decoration: none;
   @include font;
-  font-size: 1.5rem;
 
   &:hover {
     color: white;
@@ -37,7 +36,7 @@
 
 @mixin headline {
   font-family: 'Bebas Neue', cursive;
-  font-size: 3.5rem;
+  font-size: 3.5vw;
   font-weight: bold;
   padding: 65px 0 55px 0;
   color: map.get($try, font-color);

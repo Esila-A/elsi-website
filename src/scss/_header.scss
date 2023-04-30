@@ -21,6 +21,7 @@
 
   .link {
     @include linkProps;
+    font-size: 1.7vw;
     color: #464646;
     text-shadow: 0 1px 1px map.get($try, shadow);
     outline: 0;

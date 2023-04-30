@@ -7,11 +7,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 1rem 10rem;
+  padding: 1vh 10vw;
 
   .image {
-    width: 20rem;
-    margin: 0.5rem 3rem;
+    width: 20vw;
+    margin: 0.5vh 3vw;
     box-shadow: 0 0 10px 1px gray;
     
     &:hover {
@@ -23,7 +23,7 @@
     @include linkProps();
     color: #464646;
     text-shadow: 0 1px 1px map.get($try, shadow);
-
+    font-size: 1.5vw;
 
     .content {
       display: flex;

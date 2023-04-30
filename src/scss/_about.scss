@@ -3,10 +3,10 @@
 
 .about {
   @include background;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 
   &_content {
-    margin: 0 7rem;
+    margin: 0 7vw;
   }
 
   &_header {
@@ -16,7 +16,7 @@
   .text {
     @include font;
     font-weight: normal;
-    line-height: 2rem;
+    line-height: 1.7vw;
 
     &_instaLink {
       text-decoration: none;
